@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css" />
+        <title>NASA Images</title>
+    </head>
+    <body>
+        <main class="container">
+            <h1>NASA's Big Shot</h1>
+            <h2 id="title">title</h2>
+            <p id="date">date</p>
+            <section class="picture-explanation-container">
+                <img src='' id='image' alt='astronomy image by NASA'  width="304" height="228"/>
+            </section>
+            <p style="text-align:center;"><h5 id="explanation">explanation</h5>
+            </p>
+        </main>
+
+        <script type="text/javascript" src="config.js"></script>
+        <script src="app.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+        .fa {
+          font-size: 50px;
+          cursor: pointer;
+          user-select: none;
+        }
+        
+        .fa:hover {
+          color: red;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <p>Click on the icon to toggle between thumbs-up (like image) and thumbs-down (dislike image):</p>
+        
+        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+        
+        <script>
+        function myFunction(x) {
+          x.classList.toggle("fa-thumbs-down");
+        }
+        </script>
+        
+    </body>
+</html>
+
